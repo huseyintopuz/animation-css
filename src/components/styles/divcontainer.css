@@ -1,0 +1,352 @@
+.divcontainer {
+    display: flex;
+	padding: 0 80px;
+}
+.login-two {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.login-view {
+    display: none;
+}
+.user-two {
+	font: 15px/24px "Lato", Arial, sans-serif;
+	color: var(--blue);
+	width: 200px;
+    padding: 5px 40px 5px;
+    margin-bottom: 10px;
+	box-sizing: border-box;
+    border-radius: 10rem;
+    border: 0;
+	letter-spacing: 1px;
+    box-shadow: inset 0 0 0 2px var(--blue);
+    box-sizing: border-box;
+    background-image: url(../../images/user.png);
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    border: 1px solid #ccc;
+	transition: 0.4s;
+}
+.user-two::placeholder { /* Chrome/Opera/Safari */
+    opacity: 0.4;
+  }
+.user-two~.focus-border:before,
+.user-two~.focus-border:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 2px;
+	background-color: #3399FF;
+	transition: 0.2s;
+	transition-delay: 0.2s;
+	
+}
+.user-two~.focus-border:after {
+	top: auto;
+	bottom: 0;
+	right: auto;
+	left: 0;
+	transition-delay: 0.6s;
+}
+.user-two~.focus-border i:before,
+.user-two~.focus-border i:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 0;
+	background-color: #3399FF;
+	transition: 0.2s;
+}
+.user-two~.focus-border i:after {
+	left: auto;
+	right: 0;
+	top: auto;
+	bottom: 0;
+	transition-delay: 0.4s;
+}
+.user-two:focus~.focus-border:before,
+.user-two:focus~.focus-border:after {
+	width: 100%;
+	transition: 0.2s;
+	transition-delay: 0.6s;
+}
+.user-two:focus~.focus-border:after {
+	transition-delay: 0.2s;
+}
+.user-two:focus~.focus-border i:before,
+.user-two:focus~.focus-border i:after {
+	height: 100%;
+	transition: 0.2s;
+}
+.user-two:focus~.focus-border i:after {
+	transition-delay: 0.4s;
+}
+.pass-two {
+	margin-top: 10px;
+}
+.password-two {
+	font: 15px/24px "Lato", Arial, sans-serif;
+	color: var(--blue);
+	width: 200px;
+	box-sizing: border-box;
+    border-radius: 10rem;
+    border: 0;
+	letter-spacing: 1px;
+    box-shadow: inset 0 0 0 2px var(--blue);
+    box-sizing: border-box;
+    background-image: url(../../images/password.png);
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    border: 1px solid #ccc;
+	padding: 5px 40px 5px;
+	transition: 0.4s;
+}
+.password-two::placeholder {
+    opacity: 0.4;
+}
+.password-two ~.focus-border:before,
+.password-two ~.focus-border:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 2px;
+	background-color: #3399FF;
+	transition: 0.2s;
+	transition-delay: 0.2s;
+}
+.password-two ~.focus-border:after {
+	top: auto;
+	bottom: 0;
+	right: auto;
+	left: 0;
+	transition-delay: 0.6s;
+}
+.password-two ~.focus-border i:before,
+.password-two ~.focus-border i:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 0;
+	background-color: #3399FF;
+	transition: 0.2s;
+} 
+.password-two ~.focus-border i:after {
+	left: auto;
+	right: 0;
+	top: auto;
+	bottom: 0;
+	transition-delay: 0.4s;
+}
+.password-two :focus~.focus-border:before,
+.password-two :focus~.focus-border:after {
+	width: 100%;
+	transition: 0.2s;
+	transition-delay: 0.6s;
+}
+.password-two :focus~.focus-border:after {
+	transition-delay: 0.2s;
+}
+.password-two :focus~.focus-border i:before,
+.password-two :focus~.focus-border i:after {
+	height: 100%;
+	transition: 0.2s;
+}
+.password-two :focus~.focus-border i:after {
+	transition-delay: 0.4s;
+}
+.spinner {
+    position: relative;
+	margin-top: 10px;
+}
+.user-three {
+	font: 15px/24px "Lato", Arial, sans-serif;
+	color: var(--blue);
+	width: 200px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+	box-sizing: border-box;
+    border-radius: 10rem;
+    border: 0;
+	letter-spacing: 1px;
+    box-shadow: inset 0 0 0 2px var(--blue);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+	transition: 0.4s;
+}
+.user-three::placeholder { /* Chrome/Opera/Safari */
+    opacity: 0.4;
+  }
+.user-three~.focus-border:before,
+.user-three~.focus-border:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 2px;
+	background-color: #3399FF;
+	transition: 0.2s;
+	transition-delay: 0.2s;
+}
+.user-three~.focus-border:after {
+	top: auto;
+	bottom: 0;
+	right: auto;
+	left: 0;
+	transition-delay: 0.6s;
+}
+.user-three~.focus-border i:before,
+.user-three~.focus-border i:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 0;
+	background-color: #3399FF;
+	transition: 0.2s;
+}
+.user-three~.focus-border i:after {
+	left: auto;
+	right: 0;
+	top: auto;
+	bottom: 0;
+	transition-delay: 0.4s;
+}
+.user-three:focus~.focus-border:before,
+.user-three:focus~.focus-border:after {
+	width: 100%;
+	transition: 0.2s;
+	transition-delay: 0.6s;
+}
+.user-three:focus~.focus-border:after {
+	transition-delay: 0.2s;
+}
+.user-three:focus~.focus-border i:before,
+.user-three:focus~.focus-border i:after {
+	height: 100%;
+	transition: 0.2s;
+}
+.user-three:focus~.focus-border i:after {
+	transition-delay: 0.4s;
+}
+
+.password-three {
+	font: 15px/24px "Lato", Arial, sans-serif;
+	color: var(--blue);
+	width: 200px;
+	box-sizing: border-box;
+    border-radius: 10rem;
+    border: 0;
+	letter-spacing: 1px;
+    box-shadow: inset 0 0 0 2px var(--blue);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+	padding: 5px 15px;
+	transition: 0.4s;
+}
+.password-three::placeholder {
+    opacity: 0.4;
+}
+.password-three ~.focus-border:before,
+.password-three ~.focus-border:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 2px;
+	background-color: #3399FF;
+	transition: 0.2s;
+	transition-delay: 0.2s;
+}
+.password-three ~.focus-border:after {
+	top: auto;
+	bottom: 0;
+	right: auto;
+	left: 0;
+	transition-delay: 0.6s;
+}
+.password-three ~.focus-border i:before,
+.password-three ~.focus-border i:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 0;
+	background-color: #3399FF;
+	transition: 0.2s;
+} 
+.password-three ~.focus-border i:after {
+	left: auto;
+	right: 0;
+	top: auto;
+	bottom: 0;
+	transition-delay: 0.4s;
+}
+.password-three :focus~.focus-border:before,
+.password-three :focus~.focus-border:after {
+	width: 100%;
+	transition: 0.2s;
+	transition-delay: 0.6s;
+}
+.password-three :focus~.focus-border:after {
+	transition-delay: 0.2s;
+}
+.password-three :focus~.focus-border i:before,
+.password-three :focus~.focus-border i:after {
+	height: 100%;
+	transition: 0.2s;
+}
+.password-three :focus~.focus-border i:after {
+	transition-delay: 0.4s;
+}
+.giris {
+    background-color: var(--blue);
+    text-align: center;
+    padding: 5px 40px 5px;
+    border-radius: 10rem;
+    margin-top: 10px;
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+}
+.kayıt {
+    margin-top: 30px;
+    color: var(--blue);
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+}
+.sign-in {
+	margin-top: 40px;
+    position: relative;
+    animation: mymove 2s;
+}
+@keyframes mymove {
+    from {left: 200px;}
+    to {left: 0;}
+}
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background-color: var(--green);
+    border-radius: 50%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}

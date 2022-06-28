@@ -1,0 +1,14 @@
+.steps {
+    padding: 0 60px;
+}
+.steps-foot {
+    display: flex;
+    width: 650px;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.border {
+    border: 2px solid var(--grey);
+    margin: 0 462px 0 53px;
+}

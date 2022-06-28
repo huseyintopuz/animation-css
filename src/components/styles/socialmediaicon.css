@@ -1,0 +1,99 @@
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 700px;
+    margin: 50px 0;
+    padding: 0 80px;
+}
+.instagram {
+    width: 28px;
+    height: 28px;
+    background-image: url(../../images/instagram.jpeg);
+    transition: background-image 2s ease-in-out;
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.instagram:hover {
+    background-image: url(../../images/instagram-circle.jpeg);
+    background-size: 28px 28px;
+}
+.facebook {
+    width: 28px;
+    height: 28px;
+    background-image: url(../../images/facebook.png);
+    transition: background-image 2s ease-in-out;
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.facebook:hover {
+    background-image: url(../../images/facebook-circle.png);
+    background-size: 28px 28px;
+}
+.twitter {
+    width: 28px;
+    height: 28px;
+    background-image: url(../../images/twitter.png);
+    transition: background-image 2s ease-in-out;
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.twitter:hover {
+    background-image: url(../../images/twitter-circle.png);
+    background-size: 28px 28px;
+}
+.pinterest {
+    width: 28px;
+    height: 28px;
+    background-image: url(../../images/pinterest.png);
+    transition: background-image 2s ease-in-out;
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.pinterest:hover {
+    background-image: url(../../images/pinterest-circle.png);
+    background-size: 28px 28px;
+}
+.tiktok {
+    width: 28px;
+    height: 28px;
+    background-image: url(../../images/tiktok.png);
+    transition: background-image 2s ease-in-out;
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.tiktok:hover {
+    background-image: url(../../images/tiktok-circle.png);
+    background-size: 28px 28px;
+}
+.whatsapp {
+    width: 28px;
+    height: 28px;
+    background-image: url(../../images/whatsapp.png);
+    transition: background-image 2s ease-in-out;
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.whatsapp:hover {
+    background-image: url(../../images/whatsapp-circle.png);
+    background-size: 28px 28px;
+}
+.youtube {
+    width: 28px;
+    height: 28px;
+    background-image: url(../../images/youtube.png);
+    transition: background-image 2s ease-in-out;
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.youtube:hover {
+    background-image: url(../../images/youtube-circle.png);
+    background-size: 28px 28px;
+}

@@ -1,0 +1,94 @@
+.container {
+	position: relative;
+	width: 300px;
+	height:42px;
+	z-index: 0;
+	border-radius: 10rem;
+	overflow: hidden;
+}
+.search-box {
+	font: 15px/24px "Lato", Arial, sans-serif;
+	color: var(--blue);
+	width: 180px;
+	box-sizing: border-box;
+    border-radius: 10rem;
+    border: 0;
+	letter-spacing: 1px;
+    box-shadow: inset 0 0 0 1px var(--blue);
+    box-sizing: border-box;
+    background-image: url(../../images/searchicon.png);
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    background-position: 140px center;
+    border: 1px solid #ccc;
+	padding: 7px 14px 9px;
+	transition: 0.6s;
+	
+}
+.search-box:focus {
+    width: 300px;
+	border-radius: 10rem !important;
+}
+.search-box~.focus-border:before,
+.search-box~.focus-border:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 2px;
+	background-color: #3399FF;
+	transition: 0.2s;
+	transition-delay: 0.2s;
+	
+}
+ 
+.search-box~.focus-border:after {
+	top: auto;
+	bottom: 0;
+	right: auto;
+	left: 0;
+	transition-delay: 0.2;
+	z-index: -1;
+}
+ 
+.search-box~.focus-border i:before,
+.search-box~.focus-border i:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 0;
+	background-color: #3399FF;
+	transition: 0.2s;
+}
+ 
+.search-box~.focus-border i:after {
+	left: auto;
+	right: 0;
+	top: auto;
+	bottom: 0;
+	transition-delay: 0.2s;
+}
+ 
+.search-box:focus~.focus-border:before,
+.search-box:focus~.focus-border:after {
+	width: 100%;
+	transition: 0.2s;
+	transition-delay: 0.2s;
+}
+ 
+.search-box:focus~.focus-border:after {
+	transition-delay: 0.2s;
+}
+ 
+.search-box:focus~.focus-border i:before,
+.search-box:focus~.focus-border i:after {
+	height: 100%;
+	transition: 0.2s;
+}
+ 
+.search-box:focus~.focus-border i:after {
+	transition-delay: 0.2s;
+}

@@ -1,0 +1,107 @@
+.login {
+    display: flex;
+    flex-direction: column;
+	justify-content: space-between;
+}
+.spinner {
+	position: relative;
+	height: 34px;
+	border-radius: 10rem;
+	overflow: hidden;
+}
+.user {
+	font: 15px/24px "Lato", Arial, sans-serif;
+	color: var(--blue);
+	width: 200px;
+    padding: 5px 40px 5px;
+    margin-bottom: 10px;
+	box-sizing: border-box;
+    border-radius: 10rem;
+    border: 0;
+	letter-spacing: 1px;
+    box-shadow: inset 0 0 0 1px var(--blue);
+    box-sizing: border-box;
+    background-image: url(../../images/user.png);
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+	transition: 0.4s;
+}
+.user::placeholder { /* Chrome/Opera/Safari */
+    opacity: 0.4;
+  }
+.user~.focus-border:before,
+.user~.focus-border:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 2px;
+	box-shadow: inset 0 0 0 2px var(--blue);
+	transition: 0.2s;
+	transition-delay: 0.2s;
+}
+.user~.focus-border:after {
+	top: auto;
+	bottom: 0;
+	right: auto;
+	left: 0;
+	transition-delay: 0.6s;
+}
+.user~.focus-border i:before,
+.user~.focus-border i:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 0;
+	background-color: #3399FF;
+	transition: 0.2s;
+}
+.user~.focus-border i:after {
+	left: auto;
+	right: 0;
+	top: auto;
+	bottom: 0;
+	transition-delay: 0.4s;
+}
+.user:focus~.focus-border:before,
+.user:focus~.focus-border:after {
+	width: 100%;
+	transition: 0.2s;
+	transition-delay: 0.6s;
+}
+.user:focus~.focus-border:after {
+	transition-delay: 0.2s;
+}
+.user:focus~.focus-border i:before,
+.user:focus~.focus-border i:after {
+	height: 100%;
+	transition: 0.2s;
+}
+.user:focus~.focus-border i:after {
+	transition-delay: 0.4s;
+}
+
+.password {
+	font: 15px/24px "Lato", Arial, sans-serif;
+	color: var(--blue);
+	width: 200px;
+	box-sizing: border-box;
+    border-radius: 10rem;
+    border: 0;
+	letter-spacing: 1px;
+    box-shadow: inset 0 0 0 1px var(--blue);
+    box-sizing: border-box;
+    background-image: url(../../images/password.png);
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+	padding: 5px 40px 5px;
+	transition: 0.4s;
+}
+.password::placeholder {
+    opacity: 0.4;
+}

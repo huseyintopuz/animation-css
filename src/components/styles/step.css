@@ -1,0 +1,41 @@
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.step-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 30px;
+    background-color: var(--blue);
+    border-radius: 10rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: width 1s, height 1s, border-radius 1s, background-color 4s;
+}
+.circle {
+    width: 5px;
+    height: 5px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+.step-box:hover {
+    width: 90px;
+    height: 85px;
+    border-radius: 30px 80px 8px;
+    background-color: var(--green);
+    transform: rotate(45deg);
+    margin-bottom: 32px;
+}
+.step-box:hover .step-name {
+    transform: rotate(-45deg);
+}
+@keyframes step-box {
+    from {bottom: 0}
+    to {bottom: -100px}
+}
